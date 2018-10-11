@@ -3,5 +3,12 @@
   <p>
     <img src="{{album.images[1].url}}">
   </p>
+  <div *ngIf="albumTracks">
+    <h3>Track Listing</h3>
+    <div *ngFor="let track of albumTracks">
+      {{track.track_number}}
+      <a [routerLink]="['/tracks', track.id]">{{track.name}}</a>
+    </div>
+  </div>
   <p><a href (click)="back()">Back</a></p>
 </div>

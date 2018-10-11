@@ -37,7 +37,7 @@ export class AlbumComponent implements OnInit {
   }
 
   renderAlbumTracks(res: any): void {
-    this.albumTracks = res;
+    this.albumTracks = res.items;
   }
 
 }

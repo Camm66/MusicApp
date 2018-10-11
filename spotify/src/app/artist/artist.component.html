@@ -1,3 +1,15 @@
-<p>
-  artist works!
-</p>
+<div *ngIf="artist">
+  <h1>{{artist.name}}</h1>
+  <div>
+    <img src="{{artist.images[1].url}}">
+  </div>
+  <div *ngIf="topTracks">
+    <h3>Top Tracks</h3>
+    <div *ngFor="let track of topTracks">
+      <a [routerLink]="['/tracks', track.id]">
+        {{track.name}}
+      </a>
+    </div>
+  </div>
+  <p><a href (click)="back()">Back</a></p>
+</div>

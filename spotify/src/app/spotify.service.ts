@@ -36,7 +36,7 @@ export class SpotifyService {
     return this.search(query, 'track');
   }
 
-   getTrack(id: string): Observable<any[]> {
+  getTrack(id: string): Observable<any[]> {
     return this.query(`/tracks/${id}`);
   }
 
@@ -46,6 +46,14 @@ export class SpotifyService {
 
   getAlbumTracks(id: string): Observable<any[]>{
     return this.query(`/albums/${id}/tracks`);
+  }
+
+  getArtist(id: string): Observable<any[]>{
+    return this.query(`/artists/${id}`);
+  }
+
+  getTopTracks(id: string): any{
+    return this.query(`/artists/${id}/top-tracks?country=US`);
   }
 }
 

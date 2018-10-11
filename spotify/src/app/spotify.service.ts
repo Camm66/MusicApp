@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers, RequestOptions } from '@angular/http';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
+import 'rxjs/RX';
 import { environment } from '../environments/environment';
 
 
@@ -37,6 +38,14 @@ export class SpotifyService {
 
    getTrack(id: string): Observable<any[]> {
     return this.query(`/tracks/${id}`);
+  }
+
+  getAlbum(id: string): Observable<any[]>{
+    return this.query(`/albums/${id}`);
+  }
+
+  getAlbumTracks(id: string): Observable<any[]>{
+    return this.query(`/albums/${id}/tracks`);
   }
 }
 

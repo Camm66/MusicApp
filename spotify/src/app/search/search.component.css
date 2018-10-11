@@ -1,0 +1,41 @@
+h2 {
+  text-align: center;
+}
+
+.row{
+  display: grid;
+}
+
+.thumbnail {
+  background-color: rgba(0, 0, 0, 1);
+  width:100%;
+  margin-bottom: 2.5%;
+  padding-bottom: 2.5%;
+  display: inline-block;
+}
+
+.thumbnail a{
+  color:#fff;
+}
+
+.thumbnail h3, h4{
+  color:#babdc1;
+}
+
+.img-responsive{
+  float: left;
+  height: 30%;
+  width: 30%;
+  border: 2px;
+  border-color:#fff;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.caption{
+  padding-bottom: 2%;
+}
+
+.attribution{
+
+}

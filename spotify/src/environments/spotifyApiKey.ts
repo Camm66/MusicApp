@@ -1,1 +1,0 @@
-export const SpotifyAPIKey = 'BQAehgq9meZM3eNaev959kgUTqS8L8zfYIhnezJ727y5tOtuVqf2l6bUKpR7pTsE65P75ZMIzBEkq-q6LAg';

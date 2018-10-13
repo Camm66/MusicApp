@@ -3,7 +3,7 @@ h2 {
 }
 
 .row{
-  display: grid;
+
 }
 
 .thumbnail {
@@ -11,7 +11,6 @@ h2 {
   width:100%;
   margin-bottom: 2.5%;
   padding-bottom: 2.5%;
-  display: inline-block;
 }
 
 .thumbnail a{
@@ -22,20 +21,10 @@ h2 {
   color:#babdc1;
 }
 
-.img-responsive{
-  float: left;
-  height: 30%;
-  width: 30%;
-  border: 2px;
-  border-color:#fff;
-  margin-left: 5px;
-  margin-right: 10px;
-}
-
 .caption{
   padding-bottom: 2%;
 }
 
 .attribution{
-
+  margin-top:5px;
 }
